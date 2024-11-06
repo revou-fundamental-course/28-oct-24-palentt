@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0px;
+}
+
+/* perhitungan dan */
+main {
+  width: 100%;
+  display: flex;
+}
+
+#perhitungan {
+  width: 50%;
+  margin: 0px 30px;
+}
+#hasil {
+  width: 50%;
+  margin: 0px 30px;
+}
+#angkaBMI {
+  text-align: center;
+}
+/* #container {
+  margin-left: 10px;
+  width: 45%;
+} */
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 7px 0;
+}
+
+p#jk {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.lp {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.kotak {
+  padding: 15px 20px;
+  background-color: #efefef;
+  width: 100%;
+}
+.bg-merah {
+  background-color: red !important;
+}
+/* #kotak-hasil{
+
+} */
+
+.form {
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.input {
+  display: block;
+  width: 98.5%;
+  height: 30px;
+  border: 2px rgb(138, 138, 138) solid;
+  border-radius: 0px 4px 4px 0px;
+  border-left-width: 0px;
+}
+
+input.tombol {
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(28, 205, 146);
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0px 5px 0px 0px;
+}
+
+#reset-btn {
+  border: 2px solid black;
+  background-color: whitesmoke;
+}
+
+footer {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pencil {
+  padding: 7px;
+  background-color: white;
+  border-radius: 4px 0px 0px 4px;
+  border: 2px rgb(138, 138, 138) solid;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+::placeholder {
+  font-weight: bold;
+}

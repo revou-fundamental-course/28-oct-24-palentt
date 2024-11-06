@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- section form -->
+      <section id="perhitungan">
+        <div>
+          <header>
+            <h1>Kalkulator BMI</h1>
+          </header>
+
+          <!-- penjelasan kalku BMI -->
+          <article>
+            <p>
+              BMI merupakan indikator pengukuran yang digunakan untuk menentukan
+              apakah suatu berat badan ideal atau tidak ideal. BMI dikembangkan
+              oleh Adolphe Quetelet pada abad ke-19.
+            </p>
+            <p>
+              Melalui hasil perhitungan BMI, Anda dapat mengetahui apakah tubuh
+              Anda termasuk dalam kategori underweight, ideal, overweight, atau
+              bahkan obesitas.
+            </p>
+          </article>
+        </div>
+
+        <!-- form -->
+        <form>
+          <div class="kotak">
+            <!-- Selection Laki/Perempuan -->
+            <div class="form">
+              <p id="jk">Jenis Kelamin</p>
+              <input type="radio" id="radioP" value="pria" />
+              <label for="" class="lp" id="pria">Pria</label>
+              <input type="radio" id="radioW" value="wanita" />
+              <label for="" class="lp" id="wanita">Wanita</label>
+            </div>
+
+            <!-- Input Berat Badan -->
+            <div class="form" style="margin-top: px">
+              <label for="bb">Berat Badan</label>
+              <div class="icon">
+                <label for="bb" style="cursor: pointer" class="pencil">
+                  <i class="fa-solid fa-pencil"></i>
+                </label>
+                <input type="number" class="input" id="bb" placeholder="Berat Badan minimal 2 digit"/>
+              </div>
+            </div>
+            <!-- Input Tinggi Badan -->
+            <div class="form" style="margin-top: px">
+              <label for="tb">Tinggi Badan</label>
+              <div class="icon">
+                <label for="bb" style="cursor: pointer" class="pencil">
+                  <i class="fa-solid fa-pencil"></i>
+                </label>
+                <input type="number" class="input" id="tb"  placeholder="Tinggi Badan minimal 3 digit (dalam satuan cm)" />
+              </div>
+            </div>
+            <!-- Input usia -->
+            <div class="form" style="margin-top: px">
+              <label for="tb">Usia</label>
+              <div class="icon">
+                <label for="usia" style="cursor: pointer" class="pencil">
+                  <i class="fa-solid fa-pencil"></i>
+                </label>
+                <input type="number" class="input" id="usia" />
+              </div>
+            </div>
+            <!-- Tombol Hitung dan Reset -->
+          </form>
+            <div class="form">
+              <input
+                type="button"
+                class="tombol"
+                id="hitung-btn"
+                value="Hitung BMI"
+                style="cursor: pointer"
+                onclick="validateData()"
+              />
+              <input
+                type="button"
+                class="tombol"
+                id="reset-btn"
+                value="reset"
+                style="cursor: pointer"
+                onclick="refresh()"
+                />
+            </div>
+          </div>
+          <!-- cara penggunaan BMI -->
+          <header>
+            <h1>Cara Menghitung BMI</h1>
+          </header>
+        <article>
+          <p></p>
+        </article>
+      </section>
+
+      <!-- form information -->
+
+      <!-- section result -->
+      <section id="hasil" style="padding: 0px 0px 0px 30px">
+        <div>
+          <header>
+            <h1 style="margin-top: 24.9px">Hasil</h1>
+          </header>
+        </div>
+
+        <!-- hasil kalkulasi -->
+        <div class="kotak" id="kotak-hasil"  style="text-align: center">
+          <article>
+            <p class="center">Index Berat Badan Anda Adalah</p>
+          </article>
+
+          <!-- HASIL JS -->
+          <article>
+            <h2 id="angkaBMI">0</h2>
+          </article>
+
+          <!-- info dari hasil -->
+          <article>
+            <p id="deskripsi"></p>
+          </article>
+          <input type="button" class="tombol" value="Download Hasil BMI" />
+        </div>
+        <!-- penjelasan tentang BMI range -->
+        <article style="margin-bottom: 20px">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+            temporibus voluptatibus pariatur cumque autem consequatur accusamus
+            nostrum, enim hic, error doloribus, numquam voluptate possimus atque
+            dolorem dolore quos esse laborum excepturi animi doloremque ullam
+            debitis quaerat. Suscipit dicta sit provident esse odit, accusantium
+            dignissimos corrupti sed distinctio iure! Incidunt quaerat
+            distinctio necessitatibus, nam sint fuga, quod eaque voluptatum illo
+            unde animi impedit neque. Esse, facere culpa necessitatibus iusto
+            ipsam molestiae dolorem harum dolores rerum voluptas labore illum
+            pariatur quia enim iste tempore! Eos, rem blanditiis assumenda animi
+            officia corrupti ab aliquid. At, nemo libero aut tempora ipsum
+            necessitatibus eum ullam?
+          </p>
+        </article>
+        <!-- penjelasan fitur -->
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            dolorum minima magni harum consequuntur id cum magnam?
+            Exercitationem, itaque placeat id, architecto perspiciatis rerum
+            fuga dicta hic at, delectus consequuntur autem repudiandae vel iste
+            inventore saepe neque? Accusamus praesentium tempore necessitatibus
+            quaerat tempora obcaecati ipsa ex perferendis esse temporibus!
+            Eligendi.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer style="margin-top: 30px">
+      <span>made by Valent</span>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/c47ff83919.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
