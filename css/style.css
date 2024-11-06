@@ -20,10 +20,6 @@ main {
 #angkaBMI {
   text-align: center;
 }
-/* #container {
-  margin-left: 10px;
-  width: 45%;
-} */
 
 h1 {
   font-size: 30px;
@@ -48,13 +44,24 @@ p#jk {
   padding: 15px 20px;
   background-color: #efefef;
   width: 100%;
+  border-radius: 15px;
 }
 .bg-merah {
-  background-color: red !important;
+  background-color: rgb(255, 177, 177) !important;
 }
-/* #kotak-hasil{
+.bg-oren {
+  background-color: rgb(255, 199, 146) !important;
+}
+.bg-kuning {
+  background-color: rgb(255, 244, 144) !important;
+}
+.bg-ijo {
+  background-color: rgb(191, 255, 197) !important;
+}
 
-} */
+#kotak-hasil {
+  width: 95%;
+}
 
 .form {
   margin-bottom: 7px;
@@ -106,9 +113,12 @@ footer {
   border: 2px rgb(138, 138, 138) solid;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   main {
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
