@@ -12,11 +12,23 @@ radioW.addEventListener("click", function () {
   radioP.checked = false;
 });
 
+// validate data
 function validateData() {
   let bb = document.getElementById("bb").value;
   let tb = document.getElementById("tb").value;
-  console.log(bb);
-  console.log(tb);
+  let usia = document.getElementById("usia").value;
+
+  if (usia < 17) {
+    alert("usia minimal 17 tahun");
+  }
+
+  if (bb < 0 && tb < 0) {
+    alert("Berat Badan dan Tinggi Badan tidak bisa negative");
+  } else if (bb < 0) {
+    alert("Berat Badan tidak bisa negative");
+  } else if (tb < 0) {
+    alert("Berat Badan tidak bisa negative");
+  }
 
   if (!bb && !tb) {
     alert("Mohon isi Berat Badan & Tinggi Badan anda");
@@ -48,7 +60,10 @@ hitungBtn.addEventListener("click", function () {
   const nilai = document.getElementById("angkaBMI");
   nilai.innerHTML = result;
   //logika penentu result
-  if (result < 18.5) {
+  if (result <= 0) {
+    deskripsi.innerHTML =
+      "Data Tidak boleh Negative, mohon input data yang benar";
+  } else if (result >= 0 && result < 18.5) {
     deskripsi.innerHTML =
       "Kamu <span style='color: rgb(228, 198, 0); font-weight: bold'>Kekurangan</span>  berat badan ";
     kotak.classList.add("bg-kuning");
@@ -66,7 +81,10 @@ hitungBtn.addEventListener("click", function () {
     kotak.classList.add("bg-merah");
   }
   //penjelasan tetang Hasil
-  if (result < 18.5) {
+  if (result < 0) {
+    penjelasan.innerHTML =
+      "BMI kamu tidak mungkin negative coba masukan data dengan benar";
+  } else if (result >= 0 && result < 18.5) {
     penjelasan.innerHTML =
       "Badan kamu kekurangan Berat Badan, makan lah lebih banyak dan bergizi ";
   } else if (result >= 18.5 && result <= 24.9) {

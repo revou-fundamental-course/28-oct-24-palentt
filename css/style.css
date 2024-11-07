@@ -113,15 +113,6 @@ footer {
   border: 2px rgb(138, 138, 138) solid;
 }
 
-@media only screen and (max-width: 480px) {
-  main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-
 ::placeholder {
   font-weight: bold;
 }
